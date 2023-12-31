@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         
         double numero1, numero2;
+
+        // 1.Crie um programa que receba dois números e exiba a soma, subtração, multiplicação e divisão entre eles.
+
         
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite o primeiro número: ");
