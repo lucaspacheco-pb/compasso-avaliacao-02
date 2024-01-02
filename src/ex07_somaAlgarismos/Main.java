@@ -8,10 +8,8 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("Digite um número inteiro: ");
-
         do {
             String str = entrada.nextLine();
-
             if (isNumeroInteiro(str)) {
                 int numero = Integer.parseInt(str);
 
@@ -23,13 +21,11 @@ public class Main {
                     numero /= 10;
                     soma += resto;
                 }
-
                 System.out.println("A soma dos dígitos é: " + soma);
                 break;
             } else {
                 System.out.println("Por favor, insira um número inteiro válido.");
             }
-
         }while(true);
 
         entrada.close();
