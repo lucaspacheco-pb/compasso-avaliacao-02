@@ -23,12 +23,12 @@ public class Main {
         entrada.close();
     }
     private static double calcularMediaHarmonica(double[] numeros) {
-        double somaReciprocos = 0;
+        double inversos = 0;
 
         for (double numero : numeros) {
-            somaReciprocos += 1 / numero;
+            inversos += 1 / numero;
         }
-        double mediaHarmonica = numeros.length / somaReciprocos;
+        double mediaHarmonica = numeros.length / inversos;
 
         return mediaHarmonica;
     }
