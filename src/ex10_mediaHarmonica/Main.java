@@ -8,17 +8,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         List<Double> lista = new ArrayList<>();
-        String valor = "0";
+        String str = "0";
+        System.out.println("Para calcular a média Harmônica de n números...");
 
-        System.out.println("Digite os números da lista:");
-        while (!valor.equals("n")){
-
-            valor = entrada.next();
-        if (true) {
-            double numero = Double.parseDouble(valor);
-            lista.add(numero);
+        while (!str.equals("s")) {
+            System.out.print("Digite um número ('s' para sair): ");
+            str = entrada.next();
+            if (isNumero(str)) {
+                double numero = Double.parseDouble(str);
+                lista.add(numero);
+            } else if (!str.equals("s")){
+                System.out.println("Valor inválido! Elemento não incluído na lista");
+            }
         }
-    }
 
 
         double mediaHarmonica = calcularMediaHarmonica(lista);
@@ -26,7 +28,9 @@ public class Main {
 
         entrada.close();
     }
+
     private static double calcularMediaHarmonica(List<Double> lista) {
+        // mediaHarmonica = N / (1/x1 + 1/x2 + 1/x3... 1/xn)
         double inversos = 0;
 
         for (double numero : lista) {
@@ -35,6 +39,15 @@ public class Main {
         double mediaHarmonica = lista.size() / inversos;
 
         return mediaHarmonica;
+    }
+
+    public static boolean isNumero(String str) {
+        try {
+            Double.parseDouble(str);
+            return true;
+        } catch (RuntimeException e) {
+            return false;
+        }
     }
 
 }
