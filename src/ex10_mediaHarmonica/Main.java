@@ -3,10 +3,12 @@ package ex10_mediaHarmonica;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         Scanner entrada = new Scanner(System.in);
         List<Double> lista = new ArrayList<>();
         String str = "0";
@@ -14,7 +16,7 @@ public class Main {
 
         while (!str.equals("s")) {
             System.out.print("Digite um número ('s' para sair): ");
-            str = entrada.next();
+            str = entrada.next().replace(",",".");
             if (isNumero(str)) {
                 double numero = Double.parseDouble(str);
                 lista.add(numero);
