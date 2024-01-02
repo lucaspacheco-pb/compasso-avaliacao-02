@@ -22,16 +22,21 @@ public class Main {
 			System.out.print("Informe um número para adicionar a lista ou 0 (zero) para sair: ");
 			numero = scanner.nextInt();
 			
+			// Verifica se o usuário deseja sair do loop
 			if(numero == 0) break;
 			
+			// Adiciona o numero informado à lista de numeros
 			numeros.add(numero);
 		} while(numero != 0);
 		
 		for(int num : numeros) {
+			// Sabendo que todo o numero é divisivel por 1 e ele mesmo, o contador começa com o valor 2
 			for(int cont = 2; cont <= num; cont++) {
+				// Se o resto do numero atual pelo cont é ZERO e o contador não é o próprio número, então não é primo e quebra o loop para o proximo numero
 				if(num % cont == 0 && cont != num) {
 					break;
 				}
+				// Se o num é igual ao contador, então é primo
 				if(num == cont) {
 					primos.add(num);
 				}

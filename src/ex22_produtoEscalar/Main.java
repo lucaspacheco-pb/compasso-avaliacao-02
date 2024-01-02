@@ -16,6 +16,7 @@ public class Main {
 		System.out.print("Informe o tamanho dos vetores: ");
 		int tamanho = scanner.nextInt();
 		
+		// Declara e instancia os vetores com o tamanho informado pelo usuário
 		double[] vetorA = new double[tamanho];
 		double[] vetorB = new double[tamanho];
 		double produtoEscalar = 0.0;
@@ -26,6 +27,7 @@ public class Main {
 			System.out.print("Informe um numero para a posição " + cont + " do vetor B: ");
 			vetorB[cont] = scanner.nextDouble();
 			
+			// Com base nos dados informados, realiza o cálculo do produto escalar e soma com o valor atual da variável produtoEscalar
 			produtoEscalar += vetorA[cont] * vetorB[cont];
 		}
 		

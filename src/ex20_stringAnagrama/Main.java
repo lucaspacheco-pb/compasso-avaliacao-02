@@ -19,16 +19,21 @@ public class Main {
 		do {
 			System.out.print("Informe a primeira palavra: ");
 			palavra1 = scanner.nextLine().trim();
+			// Método trim() utilizado para sanitização dos dados fornecidos pelo usuário
 		} while(palavra1.length() <= 0);
 		
 		do {
 			System.out.print("Informe a segunda palavra: ");
 			palavra2 = scanner.nextLine().trim();
+			// Novamente o método trim()
 		} while(palavra2.length() <= 0);
 		
+		// a função verificaAnagrama é chamada como parametro do if, passando as duas palavras
         if (verificaAnagrama(palavra1, palavra2)) {
+        	// Em caso de retorno verdadeiro, as palavras sao anagramas
             System.out.println(palavra1 + " e " + palavra2 + " são anagramas.");
         } else {
+        	// Em caso de retorno negativo, as palavras nao sao anagramas
             System.out.println(palavra1 + " e " + palavra2 + " não são anagramas.");
         }
 
@@ -49,7 +54,7 @@ public class Main {
         Arrays.sort(charArray1);
         Arrays.sort(charArray2);
 
-        // Compara os arrays ordenados
+        // Compara os arrays ordenados, sabendo que os arrays já tem a mesma quantidade de caracteres, aqui é verificado se as letras estão posicionadas da mesma maneira em ambas as strings
         return Arrays.equals(charArray1, charArray2);
     }
 
