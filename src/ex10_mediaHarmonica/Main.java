@@ -1,4 +1,5 @@
 package ex10_mediaHarmonica;
+//Crie um programa que calcule a raiz quadrada de um número fornecido.
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,6 @@ public class Main {
                 System.out.println("Valor inválido! Elemento não incluído na lista");
             }
         }
-
 
         double mediaHarmonica = calcularMediaHarmonica(lista);
         System.out.println("A média harmônica é: " + mediaHarmonica);
