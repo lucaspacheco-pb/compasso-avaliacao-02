@@ -1,4 +1,4 @@
-package ex1_mediaGeometrica;
+package ex01_mediaGeometrica;
 
 import java.util.Scanner;
 
