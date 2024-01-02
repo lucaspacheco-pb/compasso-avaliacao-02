@@ -1,7 +1,7 @@
 /*
  * Escreva um programa que determine se uma string é um anagrama de outra.
  */
-package ex20_StringAnagrama;
+package ex20_stringAnagrama;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -36,7 +36,7 @@ public class Main {
 	}
 	
 	public static boolean verificaAnagrama(String palavra1, String palavra2) {
-        // Verifica se os comprimento das palavras são iguais
+        // Verifica se o comprimento das palavras é igual
         if (palavra1.length() != palavra2.length()) {
             return false;
         }
