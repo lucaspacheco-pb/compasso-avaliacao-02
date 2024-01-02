@@ -1,34 +1,38 @@
 package ex10_mediaHarmonica;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-
-        System.out.print("Digite o tamanho da lista: ");
-        int tamanhoLista = entrada.nextInt();
-
-        double[] numeros = new double[tamanhoLista];
+        List<Double> lista = new ArrayList<>();
+        String valor = "0";
 
         System.out.println("Digite os números da lista:");
-        for (int i = 0; i < tamanhoLista; i++) {
-            System.out.print("Número " + (i + 1) + ": ");
-            numeros[i] = entrada.nextDouble();
-        }
+        while (!valor.equals("n")){
 
-        double mediaHarmonica = calcularMediaHarmonica(numeros);
+            valor = entrada.next();
+        if (true) {
+            double numero = Double.parseDouble(valor);
+            lista.add(numero);
+        }
+    }
+
+
+        double mediaHarmonica = calcularMediaHarmonica(lista);
         System.out.println("A média harmônica é: " + mediaHarmonica);
 
         entrada.close();
     }
-    private static double calcularMediaHarmonica(double[] numeros) {
+    private static double calcularMediaHarmonica(List<Double> lista) {
         double inversos = 0;
 
-        for (double numero : numeros) {
+        for (double numero : lista) {
             inversos += 1 / numero;
         }
-        double mediaHarmonica = numeros.length / inversos;
+        double mediaHarmonica = lista.size() / inversos;
 
         return mediaHarmonica;
     }
