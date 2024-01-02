@@ -1,4 +1,4 @@
-package Ex07_somaAlgarismos;
+package ex07_somaAlgarismos;
 // Crie um programa que calcule a soma dos dígitos de um número usando um loop.
 
 import java.util.Scanner;
