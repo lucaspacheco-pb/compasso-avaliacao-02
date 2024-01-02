@@ -1,7 +1,9 @@
 /*Escreva um programa  que determine se uma string e uma subsequencia da outra */
+package ex30_subsequencia;
+
 import java.util.Scanner;
 
-public class ex30_subsequencia {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

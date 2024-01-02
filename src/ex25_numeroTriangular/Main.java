@@ -1,7 +1,9 @@
 /*Escreva um programa que determine se um numero e triangular */
+package ex25_numeroTriangular;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
-public class ex25_numeroTriangular {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

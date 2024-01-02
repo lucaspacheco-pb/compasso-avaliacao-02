@@ -1,9 +1,11 @@
 /*Implemente um programa  que calcule a mediana de uma lista de numeros */
+package ex29_mediana;
+
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ex29_mediana {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

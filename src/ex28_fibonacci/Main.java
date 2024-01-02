@@ -1,7 +1,9 @@
 /*Elabore um programa  que verifique se um numero é um número de fibonacci */
+package ex28_fibonacci;
+
 import java.util.Scanner;
 
-public class ex28_fibonacci {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

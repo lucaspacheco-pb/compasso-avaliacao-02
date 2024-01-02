@@ -1,8 +1,9 @@
 /*Desenvolva um programa  que conte o número de caracteres alfabeticos de uma string */
+package ex26_contaCaracteres;
 
 import java.util.Scanner;
 
-public class ex26_contaCaracteres {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

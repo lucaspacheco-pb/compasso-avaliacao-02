@@ -1,7 +1,9 @@
 /*Crie um programa que verifique se uma string é um número válido em notação científica */
+package ex27_notacaoCientifica;
+
 import java.util.Scanner;
 
-public class ex27_notacaoCientifica {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
