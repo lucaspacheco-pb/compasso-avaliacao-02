@@ -2,7 +2,7 @@ package ex06_quadradoPerfeito;
 
 import java.util.Scanner;
 
-// 6. Escreva um programa que verifique se um número é um quadrado perfeito.
+// 6. Desenvolva um programa que verifique se um número é um quadrado perfeito.
 
 public class Main {
 
